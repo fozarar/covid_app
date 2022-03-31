@@ -194,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     CardItem(
                                       title: 'Country',
                                       globalText: _covidDataController
-                                              .globalData.isEmpty
+                                              .countryData.isEmpty
                                           ? const Text('Please refresh')
                                           : Text(
                                               _covidDataController
@@ -205,66 +205,66 @@ class _HomeScreenState extends State<HomeScreen> {
                                     CardItem(
                                       title: 'New Confirmed',
                                       globalText: _covidDataController
-                                              .globalData.isEmpty
+                                              .countryData.isEmpty
                                           ? const Text('Please refresh')
                                           : Text(
                                               _covidDataController
-                                                  .globalData.first.newConfirmed
+                                                  .countryData[i].newConfirmed
                                                   .toString(),
                                             ),
                                     ),
                                     CardItem(
                                       title: 'Total Confirmed',
                                       globalText: _covidDataController
-                                              .globalData.isEmpty
+                                              .countryData.isEmpty
                                           ? const Text('Please refresh')
                                           : Text(
                                               _covidDataController
-                                                  .globalData.first.newConfirmed
+                                                  .countryData[i].totalConfirmed
                                                   .toString(),
                                             ),
                                     ),
                                     CardItem(
                                       title: 'New Deaths',
                                       globalText: _covidDataController
-                                              .globalData.isEmpty
+                                              .countryData.isEmpty
                                           ? const Text('Please refresh')
                                           : Text(
                                               _covidDataController
-                                                  .globalData.first.newConfirmed
+                                                  .countryData[i].newDeaths
                                                   .toString(),
                                             ),
                                     ),
                                     CardItem(
                                       title: 'Total Deaths',
                                       globalText: _covidDataController
-                                              .globalData.isEmpty
+                                              .countryData.isEmpty
                                           ? const Text('Please refresh')
                                           : Text(
                                               _covidDataController
-                                                  .globalData.first.newConfirmed
+                                                  .countryData[i].totalDeaths
                                                   .toString(),
                                             ),
                                     ),
                                     CardItem(
                                       title: 'New Recovered',
                                       globalText: _covidDataController
-                                              .globalData.isEmpty
+                                              .countryData.isEmpty
                                           ? const Text('Please refresh')
                                           : Text(
                                               _covidDataController
-                                                  .globalData.first.newConfirmed
+                                                  .countryData[i].newRecovered
                                                   .toString(),
                                             ),
                                     ),
                                     CardItem(
                                       title: 'Total Recovered',
                                       globalText: _covidDataController
-                                              .globalData.isEmpty
+                                              .countryData.isEmpty
                                           ? const Text('Please refresh')
                                           : Text(
                                               _covidDataController
-                                                  .globalData.first.newConfirmed
+                                                  .countryData[i].totalRecovered
                                                   .toString(),
                                             ),
                                     ),
