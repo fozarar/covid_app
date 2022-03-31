@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 alignment: Alignment.bottomCenter,
                 children: [
                   Container(
-                    height: Get.height * 0.2,
+                    height: Get.height * 0.13,
                     width: double.infinity,
                     decoration: const BoxDecoration(
                       color: kPrimaryColor,
@@ -57,8 +57,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   Container(
                     color: kPrimaryColor,
-                    height: 200,
-                    width: 200,
+                    height: 100,
+                    width: 100,
                     margin: const EdgeInsets.all(32),
                     child: Image.asset(
                       'assets/images/covid_image.png',
@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       child: SizedBox(
                         width: double.infinity,
-                        height: Get.height * 0.25,
+                        height: Get.height * 0.12,
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: [
@@ -168,7 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     const HeaderText(text: 'Countries'),
                     SizedBox(
                       width: 500,
-                      height: Get.height * 0.28,
+                      height: Get.height,
                       child: ListView.builder(
                         itemCount: _covidDataController.countryData.length,
                         itemBuilder: (context, i) => Card(
