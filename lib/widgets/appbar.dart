@@ -5,7 +5,7 @@ import '../utils/colors.dart';
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   final Function()? onPressed;
 
-  CustomAppBar({
+  const CustomAppBar({
     Key? key,
     this.onPressed,
   })  : preferredSize = const Size.fromHeight(50.0),

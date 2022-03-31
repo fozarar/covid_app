@@ -12,10 +12,7 @@ class HttpServices {
       if (response.statusCode == 200 || response.statusCode == 201) {
         final extractedData = json.decode(response.body);
 
-        print(extractedData);
-
         Global globalModel = Global.fromJson(extractedData);
-        print(globalModel);
         return globalModel;
       } else {
         throw Exception('hata');
@@ -36,7 +33,6 @@ class HttpServices {
         for (var i in extractedData['Countries']) {
           countries.add(Countries.fromJson(i));
         }
-        print(countries);
 
         return countries;
       } else {
@@ -44,7 +40,6 @@ class HttpServices {
       }
     } catch (e) {
       e.toString();
-      print(e.toString());
       return null;
     }
   }

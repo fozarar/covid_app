@@ -1,4 +1,3 @@
-import 'package:covid_app/services/http_services.dart';
 import 'package:covid_app/utils/colors.dart';
 import 'package:covid_app/widgets/appbar.dart';
 import 'package:covid_app/widgets/card_item.dart';
@@ -34,9 +33,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final inputBorder = OutlineInputBorder(
-      borderSide: Divider.createBorderSide(context),
-    );
     return Obx(
       () => Scaffold(
         appBar: CustomAppBar(
@@ -63,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: kPrimaryColor,
                     height: 200,
                     width: 200,
-                    margin: EdgeInsets.all(32),
+                    margin: const EdgeInsets.all(32),
                     child: Image.asset(
                       'assets/images/covid_image.png',
                       color: Colors.white,
@@ -90,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: 1,
                         ),
                       ),
-                      child: Container(
+                      child: SizedBox(
                         width: double.infinity,
                         height: Get.height * 0.25,
                         child: ListView(
@@ -158,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     const SizedBox(height: 8),
                     const HeaderText(text: 'Countries'),
-                    Container(
+                    SizedBox(
                       width: 500,
                       height: Get.height * 0.28,
                       child: ListView.builder(
@@ -173,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               width: 1,
                             ),
                           ),
-                          child: Container(
+                          child: SizedBox(
                             width: double.infinity,
                             height: 200,
                             child: ListView(

@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import '../utils/colors.dart';
 
 class CardItem extends StatelessWidget {
-  Text globalText;
-  String title;
-  CardItem({Key? key, required this.globalText, required this.title})
+  final Text globalText;
+  final String title;
+  const CardItem({Key? key, required this.globalText, required this.title})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        VerticalDivider(
+        const VerticalDivider(
           indent: 20,
           endIndent: 20,
           thickness: 2,
